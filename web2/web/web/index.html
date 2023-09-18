@@ -84,15 +84,16 @@
         <div id="form" class="cont">
             <strong>Форма</strong>
             <form action="/form" method="POST">
-                <br><label>ФИО:<input name="form-name" placeholder="Введите Ваше имя"></label>
-                <br><label>Телефон:<input name="form-phone" type="tel" placeholder="Ваш номер телефона"></label>
-                <br><label>Почта:<input name="form-mail" type="email" placeholder="Ваш email"></label>
-                <br><label>Дата рождения:<input name="form-date" type="date" value="2023-01-01"></label>
-                <br>Пол:
-                <label><input name="form-gender" type="radio" value="not" checked="checked">Не скажу</label>
-                <label><input name="form-gender" type="radio" value="male">Мужской</label>
-                <label><input name="form-gender" type="radio" value="female">Женский</label>
-                <br><label>Любимый язык:
+                <br><div><label>ФИО:<input name="form-name" placeholder="Введите Ваше имя"></label></div>
+                <br><div><label>Телефон:<input name="form-phone" type="tel" placeholder="Ваш номер телефона"></label></div>
+                <br><div><label>Почта:<input name="form-mail" type="email" placeholder="Ваш email"></label></div>
+                <br><div><label>Дата рождения:<input name="form-date" type="date" value="2023-01-01"></label></div>
+                <br><div>Пол:
+                    <label><input name="form-gender" type="radio" value="not" checked="checked">Не скажу</label>
+                    <label><input name="form-gender" type="radio" value="male">Мужской</label>
+                    <label><input name="form-gender" type="radio" value="female">Женский</label>
+                </div>
+                <br><div><label>Любимый язык:
                 <br><select name="form-lang[]" multiple="multiple">
                     <option value="Pascal">Pascal</option>
                     <option value="Java">Java</option>
@@ -100,10 +101,10 @@
                     <option value="Haskel">Haskel</option>
                     <option value="PHP">PHP</option>
                     <option value="Python">Python</option>
-                </select></label>
-                <br><label>Биография:<br><textarea name="form-person">Расскажите что-нибудь о себе</textarea></label>
-                <br><label><input name="form-check" type="checkbox">Я ознакомлен(а) с контрактом</label>
-                <br><label><input type="submit" value="Сохранить"></label>
+                </select></label></div>
+                <br><div><label>Биография:<br><textarea name="form-person">Расскажите что-нибудь о себе</textarea></label></div>
+                <br><div><label><input name="form-check" type="checkbox">Я ознакомлен(а) с контрактом</label></div>
+                <br><div><label><input type="submit" value="Сохранить"></label></div>
             </form>
         </div>
         <div id="table" class="cont">

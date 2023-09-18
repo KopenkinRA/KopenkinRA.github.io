@@ -1,4 +1,4 @@
-<!DOCTYPE hnml>
+<!DOCTYPE html>
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="style.css">
@@ -6,7 +6,7 @@
     </head>
     <body>
         <header>
-            <img id="logo" src="logo.png" alt="Лого" width="120px" height="120px">
+            <img id="logo" src="logo.png" alt="Лого" width="300px" height="300px">
             <nav id="menu">
                 <a href="../">Назад</a>
                 <a href="/">Главная</a>
@@ -88,11 +88,11 @@
                 <br><label>Телефон:<input name="form-phone" type="tel" placeholder="Ваш номер телефона"></label>
                 <br><label>Почта:<input name="form-mail" type="email" placeholder="Ваш email"></label>
                 <br><label>Дата рождения:<input name="form-date" type="date" value="2023-01-01"></label>
-                <br><label>Пол:
-                <input name="form-gender" type="radio" value="not" checked="checked">Не скажу  
-                <input name="form-gender" type="radio" value="male">Мужской 
-                <input name="form-gender" type="radio" value="female">Женский</label>
-                <br><label>Любимый язык:
+                <br>Пол:
+                <label><input name="form-gender" type="radio" value="not" checked="checked">Не скажу</label>
+                <label><input name="form-gender" type="radio" value="male">Мужской</label>
+                <label><input name="form-gender" type="radio" value="female">Женский</label>
+                <br>Любимый язык:
                 <br><select name="form-lang[]" multiple="multiple">
                     <option value="Pascal">Pascal</option>
                     <option value="Java">Java</option>
@@ -103,7 +103,7 @@
                 </select></label>
                 <br><label>Биография:<br><textarea name="form-person">Расскажите что-нибудь о себе</textarea></label>
                 <br><label><input name="form-check" type="checkbox">Я ознакомлен(а) с контрактом</label>
-                <br><label><input type="submit" value="Сохранить"/></label>
+                <br><label><input type="submit" value="Сохранить"></label>
             </form>
         </div>
         <div id="table" class="cont">

@@ -60,7 +60,9 @@ div strong {
     max-width: 960px;
     margin: 30px auto;
 }
-
+#form {
+    text-align: center;
+}
 #form div {
     display: block;
     width: 320px;
@@ -69,6 +71,9 @@ div strong {
     border: solid 1px black;
     margin: 50px auto;
     text-align: center;
+}
+#check, #submit {
+    background-color: none;
 }
 input {
     text-align: center;

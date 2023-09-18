@@ -36,13 +36,13 @@ header {
 
 
 #nav {
-    margin: 0 auto;
+    margin: 10px auto;
     margin-bottom: 30px;
     max-width: 960px;
 }
 #nav a {
     display: block;
-    margin: 10 auto;
+    margin: 10px auto;
     background-color: aquamarine;
     text-align: center;
     text-decoration: none;
@@ -58,7 +58,7 @@ div strong {
 }
 .cont {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 #form div {

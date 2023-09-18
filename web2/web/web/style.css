@@ -72,9 +72,6 @@ div strong {
     margin: 10px auto;
     text-align: center;
 }
-#check, #submit {
-    background-color: none;
-}
 input {
     text-align: center;
 }

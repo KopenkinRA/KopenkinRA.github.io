@@ -60,7 +60,7 @@ div strong {
     margin: 0 auto;
 }
 
-form div {
+#form div {
     display: block;
     width: 320px;
     background-color: cadetblue;

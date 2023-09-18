@@ -36,11 +36,12 @@ header {
 
 
 #nav {
+    margin: 0 auto;
     margin-bottom: 30px;
+    max-width: 960px;
 }
 #nav a {
     display: block;
-    max-width: 960px;
     margin: 10 auto;
     background-color: aquamarine;
     text-align: center;

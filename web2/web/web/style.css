@@ -12,6 +12,8 @@ header {
 }
 #logo {
     float: left;
+    widht: 120px;
+    height: 120px;
 }
 #text {
     background-color: white;
@@ -58,7 +60,7 @@ div strong {
     margin: 0 auto;
 }
 
-label {
+form div {
     display: block;
     width: 320px;
     background-color: cadetblue;

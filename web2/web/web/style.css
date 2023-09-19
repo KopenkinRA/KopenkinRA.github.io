@@ -47,21 +47,19 @@ header {
     border: solid black 1px;
 }
 
-div strong {
+div.cont {
+    max-width: 960px;
+    margin: 30px auto;
+}
+div.cont strong {
     text-align: center;
     display: block;
     margin-bottom: 10px;
     background-color: aqua;
     border: solid black 1px;
 }
-.cont {
-    max-width: 960px;
-    margin: 30px auto;
-}
-#form {
-    text-align: center;
-}
-form div {
+
+#form div {
     display: block;
     width: 320px;
     background-color: cadetblue;
@@ -70,24 +68,24 @@ form div {
     margin: 5px auto;
     text-align: center;
 }
-input {
+#form input {
     text-align: center;
 }
 
-table {
+#table {
     width:100%;
 }
-td, th {
+#table td, #table th {
     border: solid black 1px;
     text-align: center;
 }
-th {
+#table th {
     background-color: red;
 }
-tr:nth-child(odd) {
+#table tr:nth-child(odd) {
     background-color: white;
 }
-tr:nth-child(even) {
+#table tr:nth-child(even) {
     background-color: gray;
 }
 

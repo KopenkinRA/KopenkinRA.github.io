@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background-color: gray;
+}
+#logo {
+    float: left;
+    width: 120px;
+    height: 120px;
+}
+#text {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+#menu {
+    max-width: 960px;
+    text-align: right;
+    margin-left: auto;
+}
+#menu a {
+    display: inline-block;
+    background-color: aquamarine;
+    padding: 5px;
+    border: solid black 1px;
+    text-decoration: none;
+}
+
+
+#nav {
+    margin: 10px auto;
+    margin-bottom: 30px;
+    max-width: 640px;
+}
+#nav a {
+    display: block;
+    margin: 10px auto;
+    background-color: aquamarine;
+    text-align: center;
+    text-decoration: none;
+    border: solid black 1px;
+}
+
+div.cont {
+    max-width: 960px;
+    margin: 30px auto;
+}
+div.cont strong {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    background-color: aqua;
+    border: solid black 1px;
+}
+
+#form div {
+    display: block;
+    width: 320px;
+    background-color: cadetblue;
+    padding: 5px;
+    border: solid 1px black;
+    margin: 5px auto;
+    text-align: center;
+}
+#form input {
+    text-align: center;
+}
+
+#table table {
+    width:100%;
+}
+#table td, #table th {
+    border: solid black 1px;
+    text-align: center;
+}
+#table th {
+    background-color: orange;
+}
+#table tr:nth-child(odd) {
+    background-color: white;
+}
+#table tr:nth-child(even) {
+    background-color: gray;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: gray;
+    padding: 10px;
+}

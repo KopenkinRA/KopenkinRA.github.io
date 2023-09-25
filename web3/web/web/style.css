@@ -33,7 +33,7 @@ header {
     display: block;
     background-color: aquamarine;
     padding: 5px;
-    height: 10%;
+    height: 10vw;
     border: solid black 1px;
     text-decoration: none;
     margin-bottom: 1px;
@@ -47,7 +47,7 @@ header {
 #nav a {
     display: block;
     background-color: aquamarine;
-    height: 10%;
+    height: 10vw;
     text-align: center;
     text-decoration: none;
     border: solid black 1px;
@@ -90,7 +90,7 @@ div.cont strong {
     order: -1;
 }
 #table table {
-    height: 40%; 
+    height: 40vw;
     width: 100%;
 }
 #table td, #table th {

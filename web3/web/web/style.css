@@ -8,7 +8,7 @@ body {
 
 header {
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 130px;
     padding: 10px;
     background-color: gray;
@@ -41,7 +41,7 @@ header {
 
 
 #nav {
-    width: 100%;
+    width: 100vw;
     margin-bottom: 30px;
 }
 #nav a {
@@ -60,14 +60,14 @@ header {
 }
 
 div.cont {
-    width: 100%;
+    width: 100vw;
     margin: 10px 0;
 }
 
 div.cont strong {
     text-align: center;
     display: block;
-    width: 100%;
+    width: 100vw;
     margin-bottom: 10px;
     background-color: aqua;
     border: solid black 1px;
@@ -91,7 +91,7 @@ div.cont strong {
 }
 #table table {
     height: 40vw;
-    width: 100%;
+    width: 100vw;
 }
 #table td, #table th {
     border: solid black 1px;
@@ -108,7 +108,7 @@ div.cont strong {
 }
 
 footer {
-    width: 100%;
+    width: 100vw;
     color: white;
     background-color: gray;
     padding: 10px;

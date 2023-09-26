@@ -85,6 +85,7 @@ li img {
 
 #table {
     order: -1;
+    margin-bottom: 20px;
 }
 #table table {
     height: 80vw;

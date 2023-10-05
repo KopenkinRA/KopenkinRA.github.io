@@ -44,7 +44,7 @@ li img {
 #table tr:nth-child(even) {
     background-color: gray;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 576px) {
     #menu {
         position: absolute;
         top: 10px;

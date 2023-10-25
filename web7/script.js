@@ -1,9 +1,9 @@
 function changeIStyle(i) {
-    let img=document.getElementsByName("image");
+    let img=document.querySelectorAll('img');
+    let nav=document.getElementsByClassName("navElem");
     img.forEach(function(temp) {
         temp.className="none";
     });
-    let nav=document.getElementsByClassName("navElem");
     console.log(nav);
     for(let j=0; j!=nav.length; j++) {
         nav[j].style.backgroundColor="blue";
@@ -29,25 +29,25 @@ function changeIStyle(i) {
     }
 }
 function changeITarget(b) {
-    let img=document.getElementsByName("image");
+    let img=document.querySelectorAll('img');
     for(let i=0; i!=img.length; i++){
         console.log(i);
         if(img[i].className=="big") {
-            console.log(img[i].className);
+            console.log(img[i].id);
             changeIStyle(i+b);
             break;
         }
     }
 }
 window.addEventListener("DOMContentLoaded", function(event) {
-    let img=document.getElementsByName("image");
+    let img=document.querySelectorAll('img');
     let nav=document.getElementById("nav");
-    img.forEach(function() {
+    for(let i=0; i!=img.length; i++) {
         let elem=document.createElement("div");
         elem.className="navElem";
         console.log(elem);
         nav.appendChild(elem);
-    })
+    }
     changeIStyle(0);
     let pv=document.getElementById("prev");
     let nx=document.getElementById("next");

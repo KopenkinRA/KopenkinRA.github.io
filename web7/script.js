@@ -5,7 +5,7 @@ function changeIStyle(i) {
         temp.className="none";
     });
     console.log(nav);
-    for(let j=0; j!=nav.length; j++) {
+    for(j=0; j!=nav.length; j+=1) {
         nav[j].style.backgroundColor="blue";
     }
     console.log(i);

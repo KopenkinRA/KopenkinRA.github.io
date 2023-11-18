@@ -1,0 +1,32 @@
+<!DOCTYPE hnml>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script.js" defer></script>
+        <title>web8</title>
+    </head>
+    <body>
+        <header>
+            <div id="text">Разработка WEB</div>
+        </header>
+        <button id="button">Форма</button>
+        <footer>
+            <span>(c)Копенкин Роман</span>
+        </footer>
+    </body>
+    <div id="back">
+        <button id="exit">x</button>
+        <form id="form" method="POST">
+            <label>ФИО:<input name="name" id="name" class="save" placeholder="Введите Ваше имя"></label>
+            <label>Телефон:<input name="phone" id="phone" type="tel" class="save" placeholder="Ваш номер телефона"></label>
+            <label>Почта:<input name="mail" id="mail" type="email" class="save" placeholder="Ваш email"></label>
+            <label>Организация:<input name="org" id="org" class="save" placeholder="Ваша организация"></label>
+            <label>Сообщение:<br><textarea name="mess" id="mess" class="save">Ваше сообщение</textarea></label>
+            <label><input name="check" id="check" type="checkbox" class="save">Я принимаю политику конфинденциальности</label>
+            <label><input name="submit" id="submit" type="submit" value="Отправить"/></label>
+        </form>
+        <div id="error">Ошибка</div>
+        <div id="exel">Форма отправлена</div>
+    </div>
+</html>

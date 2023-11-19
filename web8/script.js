@@ -30,10 +30,12 @@ function popUp(tag){
     }
 }
 function hashCheck(){
+    console.log('check hash');
     if(location.hash==='#form') popUp('form');
     if(location.hash==='') popUp('close');
 }
 function getForm(){
+    console.log('get form');
     if(history.state !==null&&history.state.form===true){
         let inp=document.querySelectorAll('.save');
         inp.forEach(function(i){
@@ -42,9 +44,11 @@ function getForm(){
     }
 }
 function save(){
+    console.log('save form');
     localStorage.setItem(this.id, this.value);
 }
 function clear(){
+    console.log('clear form');
     let name = document.getElementById("name");
     name.value = "";
     let mail = document.getElementById("mail");
@@ -59,13 +63,15 @@ function clear(){
     check.checked = false;
 }
 const valid = (em) => {
-    return String(email)
+    console.log('valid mail?');
+    return String(em)
         .toLowerCase()
         .match(
             /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
         );
 };
 function send() {
+    console.log('send form');
     let name = document.getElementById("name").value;
     let mail = document.getElementById("mail").value;
     let tel = document.getElementById("phone").value;
@@ -75,7 +81,7 @@ function send() {
 
     if (name != "" && mess != "" && check.checked && valid(mail) != null) {
         let req = new XMLHttpRequest();
-        req.open('POST', 'https://formcarry.com/s/IZbmu9tuLh');
+        req.open("POST", 'https://formcarry.com/s/IZbmu9tuLh');
         req.setRequestHeader('Content-Type', 'application/json');
         req.setRequestHeader('Accept', 'application/json');
         let form = {"name": name, "mail": mail, "phone": tel, "org": org, "mess": mess};
@@ -89,11 +95,13 @@ function send() {
             else{
                 let err=document.getElementById('error');
                 err.innerHTML='Нет ответа со стороны сервера.';
+                popUp('error');
             }
         }
     } else {
         let err=document.getElementById('error');
         err.innerHTML='Форма заполнена не полностью или указаны некорректные данные.';
+        popUp('error');
     }
 }
 window.addEventListener("DOMContentLoaded", function() {
